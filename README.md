@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 
-This is a forked version for [stanislaw-glogowski's](https://github.com/stanislaw-glogowski)[react-native-jazzicon](https://github.com/stanislaw-glogowski/react-native-jazzicon)
+This is a forked version for [stanislaw-glogowski's](https://github.com/stanislaw-glogowski) [react-native-jazzicon](https://github.com/stanislaw-glogowski/react-native-jazzicon)
 
 ## Installation
 
