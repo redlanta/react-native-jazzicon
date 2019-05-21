@@ -1,6 +1,6 @@
 {
   "name": "react-native-jazzicon-custom-colors",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Native Jazzicon",
   "author": {
     "name": "redlanta",
@@ -9,10 +9,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stanislaw-glogowski/react-native-jazzicon.git"
+    "url": "https://github.com/redlanta/react-native-jazzicon"
   },
   "bugs": {
-    "url": "https://github.com/stanislaw-glogowski/react-native-jazzicon/issues"
+    "url": "https://github.com/redlanta/react-native-jazzicon/issues"
   },
   "scripts": {
     "clean": "rimraf ./dist/*",
