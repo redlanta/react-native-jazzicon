@@ -1,13 +1,13 @@
-# React Native Jazzicon
+# react-native-jazzicon-custom-colors
 
 [![NPM version][npm-image]][npm-url]
 
-React Native component for [jazzicon](https://github.com/danfinlay/jazzicon)
+This is a forked version for [stanislaw-glogowski's](https://github.com/stanislaw-glogowski)[react-native-jazzicon](https://github.com/stanislaw-glogowski/react-native-jazzicon)
 
 ## Installation
 
 ```bash
-  $ npm i react-native-jazzicon -S
+  $ npm i react-native-jazzicon-custom-colors -S
   $ react-native link react-native-svg
 ```
 
@@ -16,12 +16,12 @@ React Native component for [jazzicon](https://github.com/danfinlay/jazzicon)
 With numeric `seed`: 
 
 ```js
-import Jazzicon from 'react-native-jazzicon'
+import Jazzicon from 'react-native-jazzicon-custom-colors'
  
 export default class App extends React.Component {
    render() {
       return (
-        <Jazzicon size={120} seed={Math.round(Math.random() * 10000000)} />
+        <Jazzicon colors={myColorsArray} size={120} seed={Math.round(Math.random() * 10000000)} />
       );
   }
 }
@@ -30,12 +30,12 @@ export default class App extends React.Component {
 With ethereum `address`: 
 
 ```js
-import Jazzicon from 'react-native-jazzicon'
+import Jazzicon from 'react-native-jazzicon-custom-colors'
  
 export default class App extends React.Component {
    render() { 
       return ( 
-        <Jazzicon size={120} address={"0x2152220ab60719d6f987f6de1478971c585841c7"} />
+        <Jazzicon colors={myColorsArray} size={120} address={"0x2152220ab60719d6f987f6de1478971c585841c7"} />
       );
   }
 }

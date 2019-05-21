@@ -1,11 +1,11 @@
 {
   "name": "react-native-jazzicon",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React Native Jazzicon",
   "author": {
-    "name": "Stanislaw Glogowski",
-    "email": "hello@newobject.pl"
+    "name": "redlanta",
+    "email": "devadip.me@gmail.com"
   },
   "license": "MIT",
   "repository": {

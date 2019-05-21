@@ -3,7 +3,8 @@ import { StyleSheet, View } from "react-native";
 import { Svg, Rect } from "react-native-svg";
 import * as MersenneTwister from "mersenne-twister";
 import * as Color from "color";
-import { colors, shapeCount, wobble } from "./constants";
+import isColors from "./isColors";
+import { colors as defaultColors, shapeCount, wobble } from "./constants";
 import { IJazziconProps, IJazziconState } from "./interfaces";
 
 const styles = StyleSheet.create({
@@ -17,7 +18,15 @@ const styles = StyleSheet.create({
  */
 export class Jazzicon extends React.Component<IJazziconProps, IJazziconState> {
 
-  private static propsToState({ seed, address }: IJazziconProps): IJazziconState {
+  private static colorsForIcon = arr => {
+    if (isColors(arr)) {
+      return arr
+    }
+
+    return defaultColors
+  }
+
+  private static propsToState({ seed, address, colors }: IJazziconProps): IJazziconState {
     if (address) {
       address = address.toLowerCase();
 
@@ -30,7 +39,7 @@ export class Jazzicon extends React.Component<IJazziconProps, IJazziconState> {
     const amount = (generator.random() * 30) - (wobble / 2);
     return {
       generator,
-      colors: colors.map((hex) => (new Color(hex)).rotate(amount).hex()),
+      colors: Jazzicon.colorsForIcon(colors).map((hex) => (new Color(hex)).rotate(amount).hex()),
     };
   }
 
